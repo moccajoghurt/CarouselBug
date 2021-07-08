@@ -5,8 +5,8 @@
        xmlns:views="clr-namespace:CarouselBug.Views;assembly=CarouselBug"
        x:Class="CarouselBug.Views.AppShell">
     <TabBar>
-        <Tab Title="About" Route="About">
-            <ShellContent ContentTemplate="{DataTemplate views:AboutPage}" Route="AboutPage"/>
+        <Tab Title="About">
+            <ShellContent ContentTemplate="{DataTemplate views:AboutPage}" />
         </Tab>
         <Tab Title="Browse">
             <ShellContent ContentTemplate="{DataTemplate views:Browse}" />

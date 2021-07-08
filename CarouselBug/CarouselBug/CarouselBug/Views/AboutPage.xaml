@@ -10,7 +10,7 @@
             <CarouselView ItemsSource="{Binding ItemsView}">
                 <CarouselView.ItemTemplate>
                     <DataTemplate x:DataType="ContentView">
-                        <ContentView Content="{Binding}" />
+                        <ContentView Content="{Binding Content}" />
                     </DataTemplate>
                 </CarouselView.ItemTemplate>
             </CarouselView>
