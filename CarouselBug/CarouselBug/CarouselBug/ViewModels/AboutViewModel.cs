@@ -3,7 +3,7 @@ using CarouselBug.Views;
 using Xamarin.Forms;
 
 namespace CarouselBug.ViewModels {
-    public class AboutViewModel : BaseViewModel {
+    public class AboutViewModel {
         public AboutViewModel() {
             ItemsView = new ObservableCollection<ContentView> {
                 new View1(),
@@ -13,17 +13,9 @@ namespace CarouselBug.ViewModels {
         }
 
         public void UpdateContent() {
-            ItemsView = new ObservableCollection<ContentView> {
-                new View1(),
-                new View1(),
-                new View1(),
-            };
+            ItemsView[0] = new View1();
         }
 
-        private ObservableCollection<ContentView> _itemsView;
-        public ObservableCollection<ContentView> ItemsView {
-            get => _itemsView;
-            set => SetProperty(ref _itemsView, value);
-        }
+        public ObservableCollection<ContentView> ItemsView { get; }
     }
 }
